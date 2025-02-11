@@ -27,7 +27,8 @@ module wallace_multiplier(
   input [7:0] A, B,
   output [15:0] Out
 );
-    wire [7:0][7:0] p; // Partial products
+
+wire [7:0] p [7:0]; // Partial products
 
     //Generate Partial Products
     genvar i, j;
